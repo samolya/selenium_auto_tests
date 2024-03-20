@@ -13,8 +13,8 @@ def login_to_site(my_driver, login, password):
     submit_btn = my_driver.find_element(By.CSS_SELECTOR, "button.sign-form__btn")
     submit_btn.click()
 
-    continues_btn = WebDriverWait(my_driver, 10).until(ec.element_to_be_clickable((By.CSS_SELECTOR, "button.button")))
-    continues_btn.click()
+    # continues_btn = WebDriverWait(my_driver, 10).until(ec.element_to_be_clickable((By.CSS_SELECTOR, "button.button")))
+    # continues_btn.click()
 
 
 def send_answer(my_driver, answer):
